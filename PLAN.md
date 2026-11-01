@@ -2,16 +2,23 @@
 
 ## Who it's for
 
-UW Tacoma students who want to go hiking but don't know the area, and many of whom don't have a car. Before building, we'll ask at least 3 UWT students (classmates, a club, or a friend group) what stops them from hiking now and what they'd want from an app like this. Their answers go in LOG.md, and we'll change this plan if they need something different.
+UW Tacoma students who want to hike but have trouble finding a trail that suits them, from people who already hike to complete beginners. We interviewed three UWT students (Ivan, Marcus, and Aramis; their answers are in LOG.md). The plan below is built on what they told us.
 
 ## What we're building
 
 A static web app (HTML, CSS, vanilla JS, no build step) hosted on GitHub Pages.
 
-- A list of 15–25 real trails within about 90 minutes of UWT
-- Filters: distance from campus (drive time), difficulty, trail length, and **reachable by Pierce Transit / Sound Transit** (yes/no + which route)
-- A short card for each trail: length, elevation gain, what to bring, best season, and a link to the trail's official page
-- Works on a phone, since that's where students will use it
+- **Swipe cards are the main view.** Trails come up one at a time; swipe right to save, left to skip. Ivan and Marcus both asked for this.
+- **Difficulty first.** Every card shows a big color-coded difficulty badge (easy / moderate / hard), and there's a "beginner-friendly" filter. This is for Aramis, who doesn't hike yet.
+- Each card also shows drive time from UWT, length, elevation gain, best season, and a link to the trail's official page.
+- A small settings panel filters which cards appear: difficulty, max drive time, and max length.
+- A "saved" list of the trails you swiped right on, stored in the browser.
+- 15–25 real trails within about 90 minutes of UWT.
+- Works on a phone, since that's where students will use it.
+
+**Stretch goal:** today's weather on each card from Open-Meteo (free, no key needed), for Ivan. Only once everything above works.
+
+**Dropped from the main features:** filtering by bus. All three students drive. Trails can still list transit as an optional field.
 
 **Out of scope for Nov 8:** user accounts, reviews, live maps, and any backend.
 
@@ -19,8 +26,8 @@ A static web app (HTML, CSS, vanilla JS, no build step) hosted on GitHub Pages.
 
 | Area | Owner | Files |
 |---|---|---|
-| Trail data and research (trails, transit routes, sources) | Vaughn | `data/trails.json`, `data/SOURCES.md` |
-| UI: layout, filters, trail cards, mobile styling | Saeed | `index.html`, `styles.css`, `app.js` |
+| Trail data and research (trails, difficulty ratings, drive times, sources) | Vaughn | `data/trails.json`, `data/SOURCES.md` |
+| UI: swipe cards, settings panel, saved list, mobile styling | Saeed | `index.html`, `styles.css`, `app.js` |
 | Data format (the contract between the two halves) | Both, agreed together | `data/SCHEMA.md` |
 | Plan, log, agent instructions | Both | `PLAN.md`, `LOG.md`, `CLAUDE.md` |
 
@@ -44,7 +51,8 @@ You only edit files you own. If you need a change in the other person's files, o
 | Date | Milestone |
 |---|---|
 | Sun Nov 1 | Plan, log, and CLAUDE.md written; checkpoint card on portfolios |
-| Tue Nov 3 | Student interviews done; schema agreed; sample data in |
-| Thu Nov 5 | Real trail data + working filters merged; live on GitHub Pages |
-| Sat Nov 7 | Show it to the students we interviewed; fix what they flag |
+| Sun Nov 1 | Student interviews done (Ivan, Marcus, Aramis); plan updated |
+| Tue Nov 3 | Schema agreed; sample data in; swipe cards working on sample data |
+| Thu Nov 5 | Real trail data + settings panel + saved list merged; live on GitHub Pages |
+| Sat Nov 7 | Show it to Ivan, Marcus, and Aramis; fix what they flag; weather if time allows |
 | Sun Nov 8 | Handover done; portfolio cards filled in; submitted on Canvas |
