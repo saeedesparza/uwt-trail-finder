@@ -17,8 +17,8 @@ Saeed talked to three UWT students. We asked each one how they get around, wheth
 | Student | Major / year | Gets around by | Hikes now? | What stops them | What they want |
 |---|---|---|---|---|---|
 | Ivan | Electrical Engineering, junior | Car | Yes | Doesn't know which trails are best given the weather | Hikes that come up one at a time as Tinder-style swipe cards, not a list to filter |
-| Marcus | Mechanical Engineering | Car | Yes | Finding hikes in the first place | The same swipe cards as Ivan; doesn't care about weather |
-| Aramis | Computer Science | Car | No | Finding easy, beginner-friendly hikes | Clear difficulty markers |
+| Marcus | Mechanical Engineering, junior | Car | Yes | Finding hikes in the first place | The same swipe cards as Ivan; doesn't care about weather |
+| Aramis | Computer Science, junior | Car | No | Finding easy, beginner-friendly hikes | Clear difficulty markers |
 
 **What we learned:**
 - **Swipe cards** came up twice without us suggesting it. Both people who hike want to be shown options, not to search.
