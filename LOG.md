@@ -1,3 +1,4 @@
+- **Plan and docs PR:** Updated the ownership table and CLAUDE.md to match what happened, noted how the schedule played out in PLAN.md, and added run instructions to the README.
 # Shared Log
 
 What we planned and what changed. Newest at the bottom. Every merged PR adds a line here.
