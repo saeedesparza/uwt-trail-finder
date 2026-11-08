@@ -31,3 +31,8 @@ Saeed talked to three UWT students. We asked each one how they get around, wheth
 - Difficulty is a big color-coded badge on every card, and there's a "beginner-friendly" filter.
 - Transit is no longer a main filter. It's an optional field on each trail.
 - Weather is a stretch goal: today's forecast on the card, if there's time after the core works.
+
+## 2026-11-08: Week 2 build
+
+- **Where things stood:** On Nov 8 `main` had the plan, the log, and the interview notes, but no schema, trail data, or app code. Vaughn wrote the week 2 pieces and opened them as three PRs, in order, for Saeed to review and merge.
+- **Schema PR:** Added `data/SCHEMA.md`. It lists every field, sets the difficulty rule (hard over 2,000 ft of gain, moderate over 600 ft of gain or over 5.5 miles, easy otherwise), and says plainly that drive time is an estimate.
