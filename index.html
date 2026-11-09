@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UWT Trail Finder</title>
+  <meta name="description" content="Swipe through hikes within about 90 minutes of UW Tacoma. Easy, moderate, and hard trails with drive time, length, and elevation gain.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>UWT Trail Finder</h1>
+    <p class="tagline">Hikes within about 90 minutes of UW Tacoma</p>
+  </header>
+
+  <nav class="tabs" aria-label="Views">
+    <button type="button" id="tab-discover" class="tab is-active" aria-pressed="true">Discover</button>
+    <button type="button" id="tab-saved" class="tab" aria-pressed="false">Saved <span id="saved-count" class="count">0</span></button>
+  </nav>
+
+  <main>
+    <section id="view-discover" aria-label="Discover trails">
+      <div class="quick">
+        <label class="check beginner">
+          <input type="checkbox" id="beginner">
+          <span>Beginner-friendly only</span>
+        </label>
+        <details id="filters" class="filters">
+          <summary>Filters</summary>
+          <fieldset class="group">
+            <legend>Difficulty</legend>
+            <label class="check"><input type="checkbox" id="f-easy" checked> <span>Easy</span></label>
+            <label class="check"><input type="checkbox" id="f-moderate" checked> <span>Moderate</span></label>
+            <label class="check"><input type="checkbox" id="f-hard" checked> <span>Hard</span></label>
+          </fieldset>
+          <div class="group">
+            <label for="max-drive">Max drive time: <output id="max-drive-out">90 min</output></label>
+            <input type="range" id="max-drive" min="15" max="90" step="5" value="90">
+          </div>
+          <div class="group">
+            <label for="max-length">Max length: <output id="max-length-out">any</output></label>
+            <input type="range" id="max-length" min="2" max="12" step="1" value="12">
+          </div>
+          <button type="button" id="reset-filters" class="link-button">Reset filters</button>
+        </details>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+
+      <div id="deck" class="deck" aria-label="Trail cards"></div>
+
+      <div id="actions" class="actions">
+        <button type="button" id="skip" class="act skip">Skip</button>
+        <button type="button" id="save" class="act save">Save</button>
+      </div>
+      <p class="hint">Swipe right to save, left to skip. On a computer, drag the card or use the arrow keys.</p>
+    </section>
+
+    <section id="view-saved" aria-label="Saved trails" hidden>
+      <ul id="saved-list" class="saved-list"></ul>
+      <p id="saved-empty" class="empty" hidden>Nothing saved yet. Swipe right on a trail to keep it here.</p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>Trail details come from <a href="https://www.wta.org/" rel="noopener noreferrer" target="_blank">Washington Trails Association</a>. Drive times are estimates, so use the Directions button for the real time. Check the trail page for closures before you go.</p>
+    <p>Built by Saeed Esparza and Vaughn DeTray for TCSS 490. <a href="https://github.com/saeedesparza/uwt-trail-finder" rel="noopener noreferrer" target="_blank">Plan, log, and sources on GitHub</a>.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
