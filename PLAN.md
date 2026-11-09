@@ -27,7 +27,7 @@ A static web app (HTML, CSS, vanilla JS, no build step) hosted on GitHub Pages.
 | Area | Owner | Files |
 |---|---|---|
 | Trail data and research (trails, difficulty ratings, drive times, sources) | Vaughn | `data/trails.json`, `data/SOURCES.md` |
-| UI: swipe cards, settings panel, saved list, mobile styling | Saeed | `index.html`, `styles.css`, `app.js` |
+| UI: swipe cards, settings panel, saved list, mobile styling | Saeed (first version written by Vaughn on Nov 8, see LOG.md) | `index.html`, `styles.css`, `app.js` |
 | Data format (the contract between the two halves) | Both, agreed together | `data/SCHEMA.md` |
 | Plan, log, agent instructions | Both | `PLAN.md`, `LOG.md`, `CLAUDE.md` |
 
@@ -56,3 +56,7 @@ You only edit files you own. If you need a change in the other person's files, o
 | Thu Nov 5 | Real trail data + settings panel + saved list merged; live on GitHub Pages |
 | Sat Nov 7 | Show it to Ivan, Marcus, and Aramis; fix what they flag; weather if time allows |
 | Sun Nov 8 | Handover done; portfolio cards filled in; submitted on Canvas |
+
+## How the schedule went
+
+The table above is the plan we wrote on Nov 1. On `main`, the schema, the trail data, and the app all arrived on Nov 8, so the Nov 3 and Nov 5 milestones landed on the final day. The student check moved from Nov 7 to Nov 8. Weather was not built. See LOG.md for the details.
